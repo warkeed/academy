@@ -1,0 +1,42 @@
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.courses-table th,
+.courses-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.courses-table thead th {
+    background-color: #222;
+    color: #fff;
+    font-weight: 600;
+}
+
+.courses-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.courses-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.courses-table a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.courses-table a:hover {
+    text-decoration: underline;
+}
+
+.courses-table input[type="checkbox"] {
+    transform: scale(1.2);
+}

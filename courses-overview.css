@@ -1,0 +1,26 @@
+.courses-overview {
+    max-width: 1100px;
+    margin: 0 auto 30px auto;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.courses-overview h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.courses-overview p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.courses-overview a {
+    color: #0066cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.courses-overview a:hover {
+    text-decoration: underline;
+}
