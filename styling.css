@@ -12,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     order: 1;
+    width: 80%;
 }
 
 .main-nav ul {
@@ -19,6 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: row;
     margin: 0;
     padding: 0;
     color: white;
@@ -83,6 +85,7 @@ body {
     font-size: 28px;
     font-family: 'Open Sans';/*, Arial, sans-serif;*/
     font-weight: 700;
+    padding: 20px;
 }
 
 .logo span {
@@ -90,4 +93,50 @@ body {
     color:white;
 }
 
+/* hamburger hidden on desktop */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    /* hide menu */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 4cm;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* menu when active */
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        color: white;
+        /*width: 50%;*/
+    }
+}
 
