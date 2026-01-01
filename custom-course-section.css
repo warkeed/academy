@@ -1,0 +1,44 @@
+.custom-course-section {
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.custom-course-section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.custom-course-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.custom-course-form {
+    margin-top: 25px;
+    background-color: #f7f7f7;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.custom-course-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.custom-course-form input,
+.custom-course-form select,
+.custom-course-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.custom-course-form

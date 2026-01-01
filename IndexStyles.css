@@ -1,0 +1,143 @@
+body {
+    font-family: 'Open Sans';/*, Arial, Helvetica, sans-serif;*/
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #000000;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    order: 1;
+    width: 70%;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.main-nav li {
+    margin-right: 25px;
+    color: white;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 15px 0;
+    display: inline-block;
+    position: relative;
+}
+
+/* Hover underline animation */
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: -15px;          /* extend to the left */
+    right: -15px;         /* extend to the right */
+    bottom: 10px;
+    height: 2px;
+    background-color: currentColor;
+    color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.main-nav a:hover::after {
+    transform: scaleX(1);
+    color: white;
+}
+
+/* Arabic language item styling */
+.main-nav .lang {
+    font-weight: bold;
+    color: white;
+}
+
+/* Logo and */
+.site-header {
+    height: 4cm;
+    display: flex;
+    align-items: center;          /* vertically center logo & nav */
+    justify-content: space-between;
+    /*padding: 0 24px;*/
+    background-color: #080000;
+    color: white;
+    /*border-bottom: 1px solid #ddd;*/
+    box-sizing: border-box;
+    border:none;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    /*line-height: 1.1;*/
+    font-size: 28px;
+    font-family: 'Open Sans';/*, Arial, sans-serif;*/
+    font-weight: 700;
+    padding: 40px;
+}
+
+.logo span {
+    display: block;
+    color:white;
+}
+
+/* hamburger hidden on desktop */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding-right: 20px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    /* hide menu */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 4cm;
+        right: 0;
+        background-color: #000;
+        width: 70%;
+        flex-direction: column;
+    }
+
+    /* show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* menu when active */
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+}

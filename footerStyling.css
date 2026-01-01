@@ -1,0 +1,49 @@
+.site-footer {
+    background-color: #111;
+    padding: 20px 0;
+}
+
+.social-icons {
+/*    display: flex;
+    justify-content: center;
+*/
+    display: block;
+    gap: 18px;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1); /* makes icons white */
+}
+
+/* hover effect */
+.social-icons a:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+.site-footer .logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: 'Open Sans';/*, Arial, sans-serif;*/
+    font-weight: 700;
+    padding: 20px;
+    text-align: left;
+}
+
+.site-footer .logo span {
+    display: block;
+    color:white;
+}
